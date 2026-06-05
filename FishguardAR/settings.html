@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+    content="width=device-width,
+    initial-scale=1.0">
+
+    <title>Settings</title>
+
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+    href="assets/css/style.css">
+
+    <link rel="stylesheet"
+    href="assets/css/settings.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+    <div class="page-header">
+
+        <h1>Settings</h1>
+
+        <p>Konfigurasi sistem IoT kolam</p>
+
+    </div>
+
+    <!-- NAMA KOLAM -->
+    <div class="setting-card">
+
+        <h3>Nama Kolam</h3>
+
+        <p>Kolam Lele A</p>
+
+    </div>
+
+    <!-- FEEDER -->
+    <div class="setting-card">
+
+        <h3>Jadwal Feeder</h3>
+
+        <div class="schedule-box">
+
+            <span>07:00 WIB</span>
+            <span>12:00 WIB</span>
+            <span>17:00 WIB</span>
+
+        </div>
+
+    </div>
+
+    <!-- SISTEM -->
+    <div class="setting-card">
+
+        <h3>Sistem IoT</h3>
+
+        <p>ESP32 Connected</p>
+        <p>Monitoring Aktif</p>
+
+    </div>
+
+<!-- MODE -->
+<div class="setting-card">
+
+    <h3>Mode Sistem</h3>
+
+    <p>Smart Monitoring</p>
+
+</div>
+
+
+<!-- TEMA -->
+<div class="setting-card">
+
+    <h3>Tampilan</h3>
+
+    <select id="themeSelect">
+
+        <option value="dark">
+            Dark Mode
+        </option>
+
+        <option value="light">
+            Light Mode
+        </option>
+
+    </select>
+
+</div>
+
+
+<!-- NOTIFICATION -->
+<div class="setting-card">
+
+    <h3>Notifikasi</h3>
+
+    <select id="notificationSelect">
+
+        <option value="on">
+            ON
+        </option>
+
+        <option value="off">
+            OFF
+        </option>
+
+    </select>
+
+</div>
+
+
+<!-- SAVE -->
+<div class="setting-card">
+
+    <button id="saveSettings">
+
+        Save Settings
+
+    </button>
+
+</div>
+
+</div>
+
+<!-- NAVBAR -->
+<nav class="bottom-nav">
+
+    <a href="index.html"
+    class="nav-item">
+        Home
+    </a>
+
+    <a href="control.html"
+    class="nav-item">
+        Control
+    </a>
+
+    <a href="history.html"
+    class="nav-item">
+        History
+    </a>
+
+    <a href="settings.html"
+    class="nav-item active">
+        Settings
+    </a>
+
+</nav>
+
+<script src=
+"assets/js/settings.js">
+</script>
+
+<script src=
+"assets/js/theme.js">
+</script>
+
+</body>
+</html>

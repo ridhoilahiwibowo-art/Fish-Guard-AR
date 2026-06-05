@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>IoT Lele Dashboard</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- HEADER -->
+        <div class="header">
+
+            <div>
+                <h2 id="pondName">
+
+                    Loading...
+
+                </h2>   
+                <p>Lele Sangkuriang</p>
+                <p id="lastUpdate">
+
+    Last Update:
+    Loading...
+
+</p>
+            </div>
+
+            <div class="status-online">
+
+                <span id="deviceStatus">
+
+                    Loading...
+
+                </span>
+
+            </div>
+
+        </div>
+
+        <!-- WARNING NOTIFICATION -->
+
+        <div id="warningBox"
+        class="warning-box hidden">
+
+            <h3 id="warningTitle">
+                Monitoring Aman
+            </h3>
+
+            <p id="warningText">
+                Tidak ada warning
+            </p>
+
+        </div>
+
+        <!-- SENSOR SECTION -->
+        <h3 class="section-title">
+            Monitoring Sensor
+        </h3>
+
+        <div class="sensor-grid">
+
+            <!-- pH -->
+            <div class="sensor-card ph-card">
+                <h4>pH</h4>
+                <h1 id="phValue">0</h1>
+                <p id="phStatus">Loading...</p>
+            </div>
+
+            <!-- Suhu -->
+            <div class="sensor-card temp-card">
+                <h4>Suhu</h4>
+                <h1 id="tempValue">0°C</h1>
+                <p id="tempStatus">Loading...</p>
+            </div>
+
+            <!-- DO -->
+            <div class="sensor-card do-card">
+                <h4>DO</h4>
+                <h1 id="doValue">0</h1>
+                <p id="doStatus">Loading...</p>
+            </div>
+
+        </div>
+        
+        <!-- ACTUATOR STATUS -->
+
+<h3 class="section-title">
+    Status Aktuator
+</h3>
+
+<div class="actuator-section">
+
+    <!-- Water Pump -->
+    <div class="actuator-card">
+
+        <div>
+            <h4>Water Pump</h4>
+            <p>Pompa Aerator</p>
+        </div>
+
+        <span id="pumpIndicator"
+        class="status-badge off">
+            OFF
+        </span>
+
+    </div>
+
+    <!-- Auto Roof -->
+    <div class="actuator-card">
+
+        <div>
+            <h4>Auto Roof</h4>
+            <p>Atap Otomatis</p>
+        </div>
+
+        <span id="roofIndicator"
+        class="status-badge off">
+            OFF
+        </span>
+
+    </div>
+
+    <!-- Feeding -->
+    <div class="actuator-card">
+
+        <div>
+
+            <h3>Auto Feeder</h3>
+
+            <p id="feederTime">
+                Next: Loading...
+            </p>
+
+        </div>
+
+        <span id="feederStatus"
+        class="status-badge off">
+
+            Standby
+
+        </span>
+
+    </div>
+
+</div>
+
+    </div>
+
+    <!-- BOTTOM NAVIGATION -->
+
+<nav class="bottom-nav">
+
+    <a href="index.html" class="nav-item active">
+        Home
+    </a>
+
+    <a href="control.html" class="nav-item">
+        Control
+    </a>
+
+    <a href="history.html" class="nav-item">
+        History
+    </a>
+
+    <a href="settings.html" class="nav-item">
+        Settings
+    </a>
+
+</nav>
+
+<script src="assets/js/sensor.js"></script>
+
+<script src=
+"assets/js/theme.js">
+</script>
+
+</body>
+</html>

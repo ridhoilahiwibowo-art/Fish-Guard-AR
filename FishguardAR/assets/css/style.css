@@ -1,0 +1,110 @@
+:root{
+    --bg-dark:#0F172A;
+    --bg-secondary:#1E293B;
+    --card-bg:rgba(255,255,255,0.12);
+
+    --blue:#0EA5E9;
+    --green:#22C55E;
+    --orange:#F59E0B;
+    --red:#EF4444;
+    --yellow:#FACC15;
+
+    --white:#FFFFFF;
+    --text-secondary:#CBD5E1;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(
+        135deg,
+        #0F172A,
+        #1E293B,
+        #0EA5E9
+    );
+
+    min-height:100vh;
+    color:white;
+
+    padding:20px;
+    padding-bottom:120px;
+}
+
+.container{
+    max-width:430px;
+    margin:auto;
+}
+
+.card{
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(12px);
+
+    border:1px solid rgba(255,255,255,0.1);
+
+    border-radius:20px;
+
+    padding:20px;
+
+    margin-bottom:20px;
+}
+
+h1,h2,h3{
+    font-weight:600;
+}
+
+p{
+    color:var(--text-secondary);
+}
+
+/* LIGHT MODE */
+
+body.light-mode{
+
+    background:#f4f6fb;
+
+    color:#111827;
+}
+
+body.light-mode .card,
+body.light-mode .setting-card,
+body.light-mode .history-card,
+body.light-mode .control-card{
+
+    background:#ffffff;
+
+    color:#111827;
+}
+
+body.light-mode .bottom-nav{
+
+    background:#ffffff;
+}
+
+body.light-mode .nav-item{
+
+    color:#374151;
+}
+
+body.light-mode .page-header p{
+
+    color:#4b5563;
+}
+
+/* ESP32 CARD */
+
+.esp-card{
+
+    min-height:auto;
+
+    padding:16px;
+}
+
+.esp-card h2{
+
+    font-size:20px;
+}

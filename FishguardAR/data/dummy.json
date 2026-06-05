@@ -1,0 +1,34 @@
+{
+    "pond_name":
+    "Kolam Lele Jawwir Farm",
+
+    "device_status":
+    "offline",
+
+    "sensor": {
+
+        "ph": 7.2,
+
+        "temperature": 28,
+
+        "do": 3.8
+    },
+
+    "actuator": {
+
+        "pump": true,
+
+        "roof": true
+    },
+
+    "feeding_schedule": [
+
+        "07:00",
+        "12:00",
+        "17:00"
+
+    ],
+
+    "feeding_status":
+    "Standby"
+}
